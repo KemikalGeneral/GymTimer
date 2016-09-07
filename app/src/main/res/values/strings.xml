@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gym Timer</string>
+
+    <string name="work">Work</string>
+    <string name="rest">Rest</string>
+    <string name="repeat">Repeat</string>
+    <string name="play">PLAY</string>
+    <string name="done">Done</string>
+</resources>

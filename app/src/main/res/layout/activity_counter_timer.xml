@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.endorphinapps.kemikal.gymtimer.CounterTimer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_work_label"
+            style="@style/counter_timer_info_box_label"
+            android:text="@string/work"/>
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_rest_label"
+            style="@style/counter_timer_info_box_label"
+            android:text="@string/rest"/>
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_repeat_label"
+            style="@style/counter_timer_info_box_label"
+            android:text="@string/repeat"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_work"
+            style="@style/counter_timer_info_box"/>
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_rest"
+            style="@style/counter_timer_info_box"/>
+        <TextView
+            android:id="@+id/tv_counter_timer_info_box_repeat"
+            style="@style/counter_timer_info_box"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_counter_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/counter_text_size"
+            android:background="@color/app_black"
+            android:textColor="@color/app_red"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/app_black"
+    tools:context="com.endorphinapps.kemikal.gymtimer.GymTimer">
+
+    <EditText
+        android:id="@+id/et_work"
+        style="@style/button"
+        android:hint="@string/work" />
+
+    <EditText
+        android:id="@+id/et_rest"
+        style="@style/button"
+        android:hint="@string/rest" />
+
+    <EditText
+        android:id="@+id/et_repeat"
+        style="@style/button"
+        android:hint="@string/repeat" />
+
+    <TextView
+        android:id="@+id/tv_play"
+        style="@style/button"
+        android:text="@string/play"
+        android:textColor="@color/app_black"
+        android:background="@color/app_red" />
+
+</LinearLayout>
