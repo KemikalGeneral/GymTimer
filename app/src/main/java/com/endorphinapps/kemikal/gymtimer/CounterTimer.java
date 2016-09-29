@@ -54,13 +54,13 @@ public class CounterTimer extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent.hasExtra("EXTRAS_WORK")) {
             workTime = intent.getLongExtra("EXTRAS_WORK", 100000);
-            tv_counter_timer_info_box_work.setText("" + workTime / 1000);
+            tv_counter_timer_info_box_work.setText(String.valueOf(workTime / 1000));
         } if (intent.hasExtra("EXTRAS_REST")) {
             restTime = intent.getLongExtra("EXTRAS_REST", 100000);
-            tv_counter_timer_info_box_rest.setText("" + restTime / 1000);
+            tv_counter_timer_info_box_rest.setText(String.valueOf(restTime / 1000));
         } if (intent.hasExtra("EXTRAS_REPEAT")) {
             repeatAmount = intent.getIntExtra("EXTRAS_REPEAT", 100000);
-            tv_counter_timer_info_box_repeat.setText("" + repeatAmount);
+            tv_counter_timer_info_box_repeat.setText(String.valueOf(repeatAmount));
         } else {
             Toast.makeText(getApplicationContext(), "Sorry, something went wrong", Toast.LENGTH_SHORT).show();
         }
