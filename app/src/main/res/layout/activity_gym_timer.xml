@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:weightSum="4"
     android:background="@color/app_black"
-    tools:context="com.endorphinapps.kemikal.gymtimer.GymTimer">
+    tools:context="com.endorphinapps.kemikal.gymtimer.EnterTimes">
 
     <EditText
         android:id="@+id/et_work"

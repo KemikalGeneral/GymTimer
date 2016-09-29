@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class GymTimer extends AppCompatActivity {
+public class EnterTimes extends AppCompatActivity {
 
     private EditText et_work;
     private EditText et_rest;
@@ -20,9 +20,7 @@ public class GymTimer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gym_timer);
 
-        /**
-         * Initialise all views
-         */
+        /** Initialise all views **/
         findViews();
 
         /**
@@ -52,19 +50,17 @@ public class GymTimer extends AppCompatActivity {
                     repeatAmount = Integer.parseInt(et_repeat.getText().toString());
 
                     //Add inputs to Intent and send.
-                    Intent intent = new Intent(GymTimer.this, CounterTimer.class);
-                    intent.putExtra("WORK", workTime);
-                    intent.putExtra("REST", restTime);
-                    intent.putExtra("REPEAT", repeatAmount);
+                    Intent intent = new Intent(EnterTimes.this, CounterTimer.class);
+                    intent.putExtra("EXTRAS_WORK", workTime);
+                    intent.putExtra("EXTRAS_REST", restTime);
+                    intent.putExtra("EXTRAS_REPEAT", repeatAmount);
                     startActivity(intent);
                 }
             }
         });
     }
 
-    /**
-     * Initialise all views
-     **/
+    /** Initialise all views **/
     public void findViews() {
         et_work = (EditText) findViewById(R.id.et_work);
         et_rest = (EditText) findViewById(R.id.et_rest);
